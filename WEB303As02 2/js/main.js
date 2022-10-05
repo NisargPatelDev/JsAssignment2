@@ -1,17 +1,8 @@
 // WEB303 Assignment 2
-
-
-// $(document).ready(function(){
-//     $('#convert').click(function(){
-//         $("#convert").load("/convert.html");
-//     });
-// });
-
+//Author : Nisarg Patel
 
 $(document).ready(function(){
     $('#convert').click(function(){
-        // $('#content').empty();
-        // $( "#content").load( "convert.html");
         $("#content").load("convert.html", function(responseTxt, statusTxt, xhr){
             if(statusTxt == "success")
               console.write("External content loaded successfully!");
@@ -19,17 +10,7 @@ $(document).ready(function(){
               alert("Error: " + xhr.status + ": " + xhr.statusText);
           });
     });
-
-   
-
-
-    
-
     $('#prospect').click(function(){
-        $('#content').empty();
-        $( "#content").load( "prospect.html");
-
-
         $("#prospect").load("prospect.html", function(responseTxt, statusTxt, xhr){
             if(statusTxt == "success")
               console.write("External content loaded successfully!");
@@ -39,9 +20,6 @@ $(document).ready(function(){
     });
 
     $('#retain').click(function(){
-        $('#content').empty();
-        $( "#content").load( "retain.html");
-
         $("#retain").load("retain.html", function(responseTxt, statusTxt, xhr){
             if(statusTxt == "success")
               console.write("External content loaded successfully!");
